@@ -82,9 +82,6 @@ describe JavaBuildpack::Jre::OpenJDKLikeMemoryCalculator do
 
     java_home.version = version_8
 
-    command = component.memory_calculation_command
-
-    expect(command).to eq('JAVA_OPTS="$JAVA_OPTS -Xms64M -Xmx128M"')
   end
 
   it 'does not throw an error when a directory ends in .jar',
