@@ -53,7 +53,7 @@ module JavaBuildpack
       #
       # @return [String] the memory calculation command
       def memory_calculation_command
-        'JAVA_OPTS="$JAVA_OPTS -Xms128M -Xmx256M"'
+        'JAVA_OPTS="$JAVA_OPTS -Xms64M -Xmx128M"'
       end
 
       # (see JavaBuildpack::Component::BaseComponent#release)
